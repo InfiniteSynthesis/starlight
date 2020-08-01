@@ -31,7 +31,7 @@ Instead of manually writing a test which ensures parity with web implementations
 3. add layout_test/Tools/ to PATH
 
    ```shell
-   $ cd lynx-native/layout_test/
+   $ cd ./layout_test/
    $ export PATH="$PATH:`pwd`/Tools"
    ```
 
