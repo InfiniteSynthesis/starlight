@@ -3,6 +3,7 @@
 # This file can be validated on:
 # http://lint.travis-ci.org/
 
+sudo: required
 language: cpp
 
 # Define the matrix explicitly, manually expanding the combinations of (os, compiler, env).
@@ -22,6 +23,8 @@ script: ./ci/travis.sh
 
 # This section installs the necessary dependencies.
 addons:
+  chrome: stable
+
   homebrew:
     packages:
     - cmake
