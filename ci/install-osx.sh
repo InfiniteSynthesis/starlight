@@ -6,7 +6,7 @@ if [ "${TRAVIS_OS_NAME}" != "osx" ]; then
 fi
 
 brew update
-brew install cmake gcc
+brew install cmake
 
 sudo gem install watir
 sudo gem install watir-webdriver 
