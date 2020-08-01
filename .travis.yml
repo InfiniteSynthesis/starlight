@@ -26,7 +26,6 @@ addons:
     packages:
     - cmake
     - gcc@4.9
-    - llvm@4
     update: true
 
 notifications:
