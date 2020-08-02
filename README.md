@@ -1,5 +1,7 @@
 # starlight
 
+[![Build Status](https://travis-ci.com/InfiniteSynthesis/starlight.svg?branch=master)](https://travis-ci.com/InfiniteSynthesis/starlight)
+
 Starlight is a layout engine for cross-platform framework (e.g. React Native)
 
 ## features
@@ -28,10 +30,11 @@ Instead of manually writing a test which ensures parity with web implementations
    $ sudo gem install watir-webdriver 
    ```
 
-3. add layout_test/Tools/ to PATH
+3. update chromedriver and add to PATH
 
    ```shell
    $ cd ./layout_test/
+   $ ./updatechromedriver.sh
    $ export PATH="$PATH:`pwd`/Tools"
    ```
 
