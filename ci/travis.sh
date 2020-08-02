@@ -1,4 +1,5 @@
 cd ./layout_test/
+./updatechromedriver.sh
 export PATH="$PATH:`pwd`/Tools"
 
 ruby ./gentest.rb
