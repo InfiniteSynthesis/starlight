@@ -9,7 +9,7 @@ caps = Selenium::WebDriver::Remote::Capabilities.chrome(
     "performance"=>"ALL"
   }
 )
-browser = Watir::Browser.new(:chrome, :desired_capabilities => caps, :switches => ['--force-device-scale-factor=1', '--window-position=0,0'])
+browser = Watir::Browser.new(:chrome, :desired_capabilities => caps, :switches => ['--force-device-scale-factor=1', '--window-position=0,0', '--headless'])
 
 Dir.chdir(File.dirname($0))
 

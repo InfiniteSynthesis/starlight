@@ -2,6 +2,10 @@
 
 #include <ctype.h>
 #include <errno.h>
+#include <limits>
+#include <cstdint>
+#include <stdint.h>
+#include <limits.h>
 
 #include "base/string_utils.h"
 

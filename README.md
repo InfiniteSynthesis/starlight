@@ -1,6 +1,4 @@
-# starlight
-
-[![Build Status](https://travis-ci.com/InfiniteSynthesis/starlight.svg?branch=master)](https://travis-ci.com/InfiniteSynthesis/starlight)
+# ⭐starlight
 
 Starlight is a layout engine for cross-platform framework (e.g. React Native)
 
@@ -34,7 +32,7 @@ Instead of manually writing a test which ensures parity with web implementations
 
    ```shell
    $ cd ./layout_test/
-   $ ./updatechromedriver.sh
+   $ ./updatechromedriver.sh # works if you are using mac, otherwise please check the version and update manually
    $ export PATH="$PATH:`pwd`/Tools"
    ```
 

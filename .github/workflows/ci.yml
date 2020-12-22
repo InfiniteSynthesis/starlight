@@ -1,0 +1,38 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out repo
+      uses: actions/checkout@v2
+
+    - name: Set up chromedriver
+      uses: nanasess/setup-chromedriver@master
+      
+    - name: Set up Ruby
+      run: |-
+        sudo apt update
+        sudo apt install ruby-full
+        ruby --version
+
+    - name: Setup cmake
+      uses: jwlawson/actions-setup-cmake@v1.5
+      with:
+        cmake-version: '3.15.4'
+    - name: Use cmake
+      run: cmake --version
+
+    - name: Build and test
+      run: |-
+        sudo gem install watir
+        sudo gem install watir-webdriver 
+        cd ./layout_test/
+        ruby ./gentest.rb
+        mkdir build
+        cd build
+        cmake ..
+        make
+        ./bin/layout_test
